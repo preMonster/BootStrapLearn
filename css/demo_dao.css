@@ -1,0 +1,77 @@
+.imgs{
+	width: 100%;
+	height: 300px;
+	border: 1px #999999 solid;
+	overflow: hidden;
+	position: relative;
+}
+
+.imgs img{
+	width: 50%;
+	height: 100%;
+	transition:left 0.3s;
+	position: absolute;
+}
+
+.imgs ul{
+	width: 120px;
+	position: absolute;
+	right: 50px;
+	bottom: 20px;
+	z-index: 100;/*将其置于顶层*/
+}
+
+.imgs ul li{
+	float: left;
+	list-style: none;
+}
+
+.imgs ul li button{
+	height: 13px;
+	margin-left: 3px;
+	border-radius: 50%;
+	border: none;
+}
+
+#zuo,#you{
+	width: 30px;
+	height: 50px;
+	position: absolute;
+	top: 125px;
+	z-index: 100;/*将其置于顶层*/
+	border: none;
+	filter:alpha(Opacity=80);
+	-moz-opacity:0.5;
+	opacity: 0.5;
+	background-color: #B2B2B2;
+}
+
+#zuo{
+	left: 5px;
+}
+
+#you{
+	right: 5px;
+}
+
+#zuo input,#you input{
+	width: 20px;
+	height: 20px;
+	position: relative;
+	top: 15px;
+	left: 5px;
+	border: none;
+	background-size: contain;/*使图片充满*/
+	filter:alpha(Opacity=80);
+	-moz-opacity:0.5;
+	opacity: 0.5;
+	background-color: #B2B2B2;
+}
+
+#zuo input{
+	background-image: url(../img/zuo.png);
+}
+
+#you input{
+	background-image: url(../img/you.png);
+}

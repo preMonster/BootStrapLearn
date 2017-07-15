@@ -1,0 +1,38 @@
+body header{
+	position: fixed;
+	height: 42px;
+	z-index: 100;
+	background-color: white;
+	border-bottom: 2px cyan solid;
+}
+
+a.daohanga{
+	border: 1px #EEEEEE solid;
+}
+
+a.daohanga1{
+	border: 1px #CCCCCC solid;
+}
+
+body iframe{
+	width: 100%;
+	margin-top: 20px;
+	border: none;
+}
+
+.zuo_daohang{
+	position: fixed;
+	bottom: 20%;
+	text-align: center;
+}
+
+body a#back{
+	width: 70px;
+	height: 70px;
+	line-height: 58px;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+	text-align: center;
+}

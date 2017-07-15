@@ -1,0 +1,81 @@
+{"data":[{
+        "name": "数据地址",
+        "biao": "url",
+        "content": "调用后台得到json的地址"
+    },{
+        "name": "获取方式",
+        "biao": "method",
+        "content": "ajax获取方式——get,post等"
+    }, {
+        "name": "数据类型",
+        "biao": "dataType",
+        "content": "返回的数据类型"
+    }, {
+        "name": "表格样式",
+        "biao": "classes",
+        "content": "表格的类名称。默认情况下，表格是有边框的，你可以添加 'table-no-bordered' 来删除表格的边框样式。"
+    },{
+        "name": "undefined",
+        "biao": "undefinedText",
+        "content": "当为undefined时默认值为什么"
+    }, {
+        "name": "分页",
+        "biao": "pagination",
+        "content": "启动分页"
+    },{
+        "name": "分页循环",
+        "biao": "paginationLoop",
+        "content": "设置为 true 启用分页条无限循环的功能。"
+    }, {
+       	"name": "当前页数",
+        "biao": "pageNumber",
+        "content": "当前页数"
+    }, {
+       	"name": "每页条数",
+        "biao": "pageSize",
+        "content": "每页条数"
+    }, {
+       	"name": "条数选择",
+        "biao": "pageList",
+        "content": "存了可以选择条数的集合.ps:[1, 5, 10, 20]"
+    }, {
+       	"name": "隔行变色",
+        "biao": "striped",
+        "content": "隔行变色"
+    }, {
+       	"name": "显示列",
+        "biao": "showColumns",
+        "content": "显示下拉框勾选要显示的列"
+    }, {
+       	"name": "显示刷新",
+        "biao": "showRefresh",
+        "content": "显示刷新按钮"
+    }, {
+       	"name": "改变行竖",
+        "biao": "showToggle",
+        "content": "显示一行是否改成竖着"
+    }, {
+       	"name": "显示分页框",
+        "biao": "showPaginationSwitch",
+        "content": "是否显示 下面的分页框"
+    }, {
+       	"name": "显示搜索",
+        "biao": "search",
+        "content": "显示搜索框"
+    }, {
+       	"name": "显示行消息",
+        "biao": "detailView",
+        "content": "是否显示行展开"
+    }, {
+       	"name": "行消息操作",
+        "biao": "detailFormatter",
+        "content": "function(){/你要怎么展示你的行内容/}"
+    }, {
+       	"name": "工具栏",
+        "biao": "toolbal",
+        "content": "自定义工具栏"
+    }, {
+       	"name": "数组",
+        "biao": "columns",
+        "content": "表头"
+    }]}

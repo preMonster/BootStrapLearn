@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewpor" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>主页面</title>
+		<!--内部css-->
+		<link rel="stylesheet" type="text/css" href="../../node_modules/bootstrap/dist/css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../node_modules/bootstrap/dist/css/bootstrap-theme.css"/>
+		<link rel="stylesheet" type="text/css" href="../../node_modules/bootstrap/dist/css/bootstrap-theme.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../node_modules/bootstrap/dist/css/bootstrap-theme.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../node_modules/bootstrap/dist/css/bootstrap-table.css"/>
+		<link rel="stylesheet" type="text/css" href="../../node_modules/bootstrap/dist/css/bootstrap-table.min.css"/>
+		
+		<!--外部css-->
+		<link rel="stylesheet" href="../../css/demo_table.css" />
+		<style>
+			.mianban{
+				margin: 30px 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 style="margin-bottom: 80px;">表格属性</h1>
+		<div class="table-responsive">
+        <div id="toolbar">
+        	<a href="javascript:void(0);" class="btn btn-success btn-xs" onclick="add();">
+        		<i class="glyphicon glyphicon-plus"></i>新增</a>
+	        <a href="javascript:void(0);" class="btn btn-danger btn-xs" onclick="del()">
+	        	<i class="glyphicon glyphicon-trash"></i>删除</a>
+	    </div>
+		  <table id="table" class="table">
+		  </table>
+		</div>
+		
+		<div class="mianban">
+		<div class="panel panel-success">
+ 			<div class="panel-heading">新增实现</div>
+			  <div class="panel-body">
+			    <code>$table.bootstrapTable('prepend',row)</code>
+			  </div>
+		</div>
+		<div class="panel panel-danger">
+ 			<div class="panel-heading">删除实现</div>
+			  <div class="panel-body">
+			    <code>$table.bootstrapTable('remove', {field: 'biao', values: rows})</code>
+			  </div>
+		</div>
+		<div class="panel panel-warning">
+ 			<div class="panel-heading">修改实现</div>
+			  <div class="panel-body">
+				<code>$table.bootstrapTable('updateRow', {index: $("#index").html(), row: row})</code>
+			  </div>
+		</div>
+		<div class="panel panel-info">
+ 			<div class="panel-heading">查看实现</div>
+			  <div class="panel-body">
+			     <code>detailFormatter:function(index, row){
+    	return JSON.stringify(row);
+    }</code>
+			  </div>
+		</div>
+		<div class="panel panel-primary">
+ 			<div class="panel-heading">获取勾选数据</div>
+			  <div class="panel-body">
+				<code>$table.bootstrapTable('getSelections')</code>
+			  </div>
+		</div>
+		</div>
+		
+		
+		<!-- 模态框（Modal） -->
+		<div class="modal fade" style="margin-top: 40px;" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-dialog">
+		        <div class="modal-content">
+		            <div class="modal-header">
+		                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+		                    &times;
+		                </button>
+		                <h4 id="title" class="modal-title" id="myModalLabel">
+		                    	编辑表格
+		                </h4>
+		            </div>
+		            <div id="modal_body" class="modal-body">
+		            	<label id="index"  style="display: none;"></label>
+		            	<label for="name">name</label>
+    					<input type="text" class="form-control" id="name" placeholder="name">
+		            	<label for="biao">标示</label>
+    					<input type="text" class="form-control" id="biao" placeholder="标示">
+		            	<label for="content">简介</label>
+		            	<textarea class="form-control" id="content" rows="3" placeholder="简单说明下"></textarea>   
+		            </div>
+		            
+		            <div id="modal_body_del" class="modal-body">
+		            	<h4 style="color: red;">确认删除？</h4>
+		            </div>
+		            
+		            <div class="modal-footer">
+		                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+		                </button>
+		                <button id="sure" type="button" class="btn btn-primary">
+		                    	确认
+		                </button>
+		            </div>
+		        </div><!-- /.modal-content -->
+		    </div><!-- /.modal -->
+		</div>
+	</body>
+	<!--内部js-->
+	<script type="text/javascript" src="../../js/jquery-3.2.1.min.js" ></script>
+	<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="../../node_modules/bootstrap/js/bootstrap-table.js"></script>
+	<script src="../../node_modules/bootstrap/js/bootstrap-table.min.js"></script>
+	<script src="../../node_modules/bootstrap/js/bootstrap-table-zh-CN.js"></script>
+	
+	<!--外部js-->
+	<script type="text/javascript" src="../../json/json.js" ></script>
+	<script type="text/javascript" src="../../js/demo_table.js" ></script>
+</html>

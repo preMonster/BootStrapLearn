@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--内部css-->
+		<link rel="stylesheet" type="text/css" href="../../node_modules/bootstrap/dist/css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../node_modules/bootstrap/dist/css/bootstrap-theme.css"/>
+		
+		<!--外部css-->
+		<link rel="stylesheet" href="../../css/demo_dao.css" />
+	</head>
+	<body>
+		<h1 style="margin-bottom: 80px;">图片轮播</h1>
+		<div class="imgs"></div>
+		
+		<section>
+			
+		</section>
+	</body>
+	<script type="text/javascript" src="../../json/json.js"></script>
+	<script type="text/javascript">
+		var m = getjson_imgdao().number;
+		var imgs = "";
+		var lis = "";
+		for(var i=0;i<m;i++){
+			imgs+="<img class='img"+i+"' onmousemove='hover("+i+")' src='../../img/i"+(i+1)+".jpg' />"
+			lis+="<li><button onmousemove='hover("+i+")'></button></li>"
+		}
+		
+		document.getElementsByClassName("imgs")[0].innerHTML = imgs+"<ul>"+lis+"</ul>"+
+		"<div id='zuo' onclick='next_hover(false)'><input type='button'/></div>"+
+			"<div id='you' onclick='next_hover(true)'><input type='button'/></div>";
+	</script>
+	<script type="text/javascript" src="../../js/demo_dao.js" ></script>
+</html>
